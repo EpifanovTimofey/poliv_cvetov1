@@ -1,6 +1,5 @@
-import random, time
+import random, time, pygame
 
-import pygame
 
 
 def cveta():
