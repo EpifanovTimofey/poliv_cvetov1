@@ -21,12 +21,11 @@ def view1():
 
     a.fill([0, 0, 0])
     kap1 = pygame.transform.scale(kap, [model.rect.w, model.rect.h])
-    if model.rectcv1.top != 0:
-        cv_1 = pygame.transform.scale(cv1, model.rectcv1.size)
-        cv_2 = pygame.transform.scale(cv2, model.rectcv2.size)
+    cv_1 = pygame.transform.scale(cv1, model.rectcv1.size)
+    cv_2 = pygame.transform.scale(cv2, model.rectcv2.size)
     a.blit(cv_1, model.rectcv1)
     a.blit(cv_2, model.rectcv2)
     a.blit(kap1, model.rect)
-    pygame.draw.rect(a, [255, 255, 255], model.rectcv1, 2)
-    pygame.draw.rect(a, [0, 255, 255], model.rectcv2, 2)
+    # pygame.draw.rect(a, [255, 255, 255], model.rectcv1, 2)
+    # pygame.draw.rect(a, [0, 255, 255], model.rectcv2, 2)
     pygame.display.flip()
